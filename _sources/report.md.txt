@@ -1,0 +1,13 @@
+Protoplaster tests report
+==================
+|device name|test name|module|duration|message|status|
+|---|---|---|---|---|---|
+|/dev/i2c-0|addresses|test.py::TestI2C::test_addresses|1ms 82us|AssertionError: No device found at address: 60|<span style='color:red'>failed|
+|/dev/i2c-0|addresses|test.py::TestI2C::test_addresses|1ms 25us|AssertionError: No device found at address: 112|<span style='color:red'>failed|
+|/dev/video0|frame|test.py::TestCamera::test_frame|1ms 794us|AssertionError: Device /dev/video0 doesn't exist|<span style='color:red'>failed|
+|/dev/video0|device_name|test.py::TestCamera::test_device_name|1ms 258us|AssertionError: Device /dev/video0 doesn't exist|<span style='color:red'>failed|
+|/dev/video0|driver_name|test.py::TestCamera::test_driver_name|801us|AssertionError: Device /dev/video0 doesn't exist|<span style='color:red'>failed|
+|/dev/video2|frame|test.py::TestCamera::test_frame|1ms 231us|AssertionError: Device /dev/video2 doesn't exist|<span style='color:red'>failed|
+|/dev/video2|device_name|test.py::TestCamera::test_device_name|1ms 141us|AssertionError: Device /dev/video2 doesn't exist|<span style='color:red'>failed|
+|/dev/video2|driver_name|test.py::TestCamera::test_driver_name|1ms 105us|AssertionError: Device /dev/video2 doesn't exist|<span style='color:red'>failed|
+|/sys/class/gpio/20|read_write|test.py::TestGPIO::test_read_write|102us|AssertionError: Sysfs interface for GPIO does not exist|<span style='color:red'>failed|

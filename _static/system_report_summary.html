@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css"/>
+        <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+        data-tag="font"
+        />
+    </head>
+    <body>
+        <div>
+            <div class="top_bar">
+                <div class="top_bar_items_container">
+                    <div class="top_bar_left">
+                        <img src="static/logo.svg" class="top_bar_logo">
+                    </div>
+                    <div class="top_bar_protoplaster">Protoplaster</div>
+                    <div class="top_bar_right">System report summary</div>
+                </div>
+            </div>
+            <link href="./index.css" rel="stylesheet" />
+            <div class="item_list">
+                <div class="item">
+                    <div class="item_header">
+                        <div class="item_header_left">
+                            <div>
+                                <h2 class="item_header_text">uname</h2>
+                            </div>
+                            
+                                <button 
+                                    class="summary_button"
+                                    id="uname_os info_button" 
+                                    onclick="
+                                        document.getElementById('uname_os info').classList.toggle('hidden');
+                                        document.getElementById('uname_os info_button_triangle').classList.toggle('summary_button_triangle_open');
+                                    "
+                                >
+                                <div class="summary_button_container">
+                                    os info
+                                    <img id="uname_os info_button_triangle" class="summary_button_triangle" src="static/summary_downtriangle.svg">
+                                </div>
+                            </button>
+                            
+                        </div>
+                        
+                        <div class="item_header_right">
+                            <p class="item_file_text">Full output available in <a href="uname.out" class="item_file_link">uname.out</a></p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="item_header_separator"></div>
+
+                    
+                    <div id="uname_os info" class="hidden summary_container">
+                        <div class="summary">
+                            <div class="summary_left">
+                                <button 
+                                    class="summary_close_button" 
+                                    onclick="
+                                        document.getElementById('uname_os info').classList.toggle('hidden');
+                                        document.getElementById('uname_os info_button_triangle').classList.toggle('summary_button_triangle_open');
+                                    "
+                                >
+                                    <img src="static/summary_x_slash.svg" class="summary_x">
+                                    <img src="static/summary_x_backslash.svg" class="summary_x">
+                                </button>
+                            </div>
+                            <div class="summary_right">
+                                <h3 class="summary_title">os info</h3>
+                                <pre><code class="summary_code">Linux scalenode-runner-103-job-2933692 5.17.1 #2 SMP PREEMPT Thu May 29 14:09:57 CEST 2025 x86_64 GNU/Linux
+</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="item">
+                    <div class="item_header">
+                        <div class="item_header_left">
+                            <div>
+                                <h2 class="item_header_text">dmesg</h2>
+                            </div>
+                            
+                                <button 
+                                    class="summary_button"
+                                    id="dmesg_usb_button" 
+                                    onclick="
+                                        document.getElementById('dmesg_usb').classList.toggle('hidden');
+                                        document.getElementById('dmesg_usb_button_triangle').classList.toggle('summary_button_triangle_open');
+                                    "
+                                >
+                                <div class="summary_button_container">
+                                    usb
+                                    <img id="dmesg_usb_button_triangle" class="summary_button_triangle" src="static/summary_downtriangle.svg">
+                                </div>
+                            </button>
+                            
+                                <button 
+                                    class="summary_button"
+                                    id="dmesg_v4l_button" 
+                                    onclick="
+                                        document.getElementById('dmesg_v4l').classList.toggle('hidden');
+                                        document.getElementById('dmesg_v4l_button_triangle').classList.toggle('summary_button_triangle_open');
+                                    "
+                                >
+                                <div class="summary_button_container">
+                                    v4l
+                                    <img id="dmesg_v4l_button_triangle" class="summary_button_triangle" src="static/summary_downtriangle.svg">
+                                </div>
+                            </button>
+                            
+                        </div>
+                        
+                        <div class="item_header_right">
+                            <p class="item_file_text">Full output available in <a href="dmesg.out" class="item_file_link">dmesg.out</a></p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="item_header_separator"></div>
+
+                    
+                    <div id="dmesg_usb" class="hidden summary_container">
+                        <div class="summary">
+                            <div class="summary_left">
+                                <button 
+                                    class="summary_close_button" 
+                                    onclick="
+                                        document.getElementById('dmesg_usb').classList.toggle('hidden');
+                                        document.getElementById('dmesg_usb_button_triangle').classList.toggle('summary_button_triangle_open');
+                                    "
+                                >
+                                    <img src="static/summary_x_slash.svg" class="summary_x">
+                                    <img src="static/summary_x_backslash.svg" class="summary_x">
+                                </button>
+                            </div>
+                            <div class="summary_right">
+                                <h3 class="summary_title">usb</h3>
+                                <pre><code class="summary_code">[    0.469938] usbcore: registered new interface driver usbfs
+[    0.470124] usbcore: registered new interface driver hub
+[    0.471010] usbcore: registered new device driver usb
+[    0.600197] pci 0000:00:04.0: quirk_usb_early_handoff+0x0/0x600 took 14922 usecs
+[    2.219417] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.17
+[    2.220808] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    2.222025] usb usb1: Product: xHCI Host Controller
+[    2.222861] usb usb1: Manufacturer: Linux 5.17.1 xhci-hcd
+[    2.223763] usb usb1: SerialNumber: 0000:00:04.0
+[    2.229539] usb usb2: We don't know the algorithms for LPM for this host, disabling LPM.
+[    2.230887] usb usb2: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 5.17
+[    2.232252] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    2.233473] usb usb2: Product: xHCI Host Controller
+[    2.234297] usb usb2: Manufacturer: Linux 5.17.1 xhci-hcd
+[    2.235180] usb usb2: SerialNumber: 0000:00:04.0
+[    2.237592] usbcore: registered new interface driver cdc_acm
+[    2.239833] usbcore: registered new interface driver usblp
+[    2.240758] usbcore: registered new interface driver usb-storage
+[    2.241747] usbcore: registered new interface driver pl2303
+[    2.242653] usbserial: USB Serial support registered for pl2303
+[    2.264416] usbcore: registered new interface driver uvcvideo
+[    2.287552] usbcore: registered new interface driver usbhid
+[    2.289869] usbhid: USB HID core driver
+[    2.292365] usbcore: registered new interface driver snd-usb-audio
+[    2.818333] usbcore: registered new interface driver ftdi_sio
+[    2.820987] usbserial: USB Serial support registered for FTDI USB Serial Device
+</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="dmesg_v4l" class="hidden summary_container">
+                        <div class="summary">
+                            <div class="summary_left">
+                                <button 
+                                    class="summary_close_button" 
+                                    onclick="
+                                        document.getElementById('dmesg_v4l').classList.toggle('hidden');
+                                        document.getElementById('dmesg_v4l_button_triangle').classList.toggle('summary_button_triangle_open');
+                                    "
+                                >
+                                    <img src="static/summary_x_slash.svg" class="summary_x">
+                                    <img src="static/summary_x_backslash.svg" class="summary_x">
+                                </button>
+                            </div>
+                            <div class="summary_right">
+                                <h3 class="summary_title">v4l</h3>
+                                <pre><code class="summary_code">this summary is empty</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </body>
+</html>

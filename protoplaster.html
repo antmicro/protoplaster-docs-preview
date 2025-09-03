@@ -13,7 +13,7 @@
     
     
       
-        <title>Protoplaster - docs example</title>
+        <title>Protoplaster tests - Protoplaster - docs example</title>
       
     
     
@@ -71,7 +71,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="#" title="Protoplaster - docs example" class="md-header__button md-logo" aria-label="Protoplaster - docs example" data-md-component="logo">
+    <a href="index.html" title="Protoplaster - docs example" class="md-header__button md-logo" aria-label="Protoplaster - docs example" data-md-component="logo">
       <img src="_static/white.svg" alt="logo">
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -87,7 +87,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Protoplaster - docs example
+              Protoplaster tests
             
           </span>
         </div>
@@ -202,7 +202,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="#" title="Protoplaster - docs example" class="md-nav__button md-logo" aria-label="Protoplaster - docs example" data-md-component="logo">
+    <a href="index.html" title="Protoplaster - docs example" class="md-nav__button md-logo" aria-label="Protoplaster - docs example" data-md-component="logo">
       <img src="_static/white.svg" alt="logo">
     </a>
     Protoplaster - docs example
@@ -276,12 +276,64 @@
 
   
   
+    
+  
+    
   
   
-    <li class="md-nav__item">
-      <a href="protoplaster.html" class="md-nav__link">
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          <span class="md-ellipsis">Protoplaster tests</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="#" class="md-nav__link md-nav__link--active">
         <span class="md-ellipsis">Protoplaster tests</span>
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#i2c-devices-tests" class="md-nav__link">
+    <span class="md-ellipsis">I2C devices tests</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#camera-sensor-tests" class="md-nav__link">
+    <span class="md-ellipsis">Camera sensor tests</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gpios-tests" class="md-nav__link">
+    <span class="md-ellipsis">GPIOs tests</span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -332,40 +384,59 @@
                   
 
 
-  <a href="https://dev.antmicro.com/git/repositories/protoplaster-protoplaster/blob/82348-remote-api-proposal/docs/source/index.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://dev.antmicro.com/git/repositories/protoplaster-protoplaster/blob/82348-remote-api-proposal/docs/source/protoplaster.md" title="Edit this page" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
-<h1 id="protoplaster-docs-example">Protoplaster - docs example<a class="headerlink" href="#protoplaster-docs-example" title="Link to this heading">¶</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="api.html">Protoplaster Server API Reference</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="api.html#error-handling">Error Handling</a></li>
-<li class="toctree-l2"><a class="reference internal" href="api.html#configs-api">Configs API</a></li>
-<li class="toctree-l2"><a class="reference internal" href="api.html#test-runs-api">Test Runs API</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="readme.html">Protoplaster</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="readme.html#installation">Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="readme.html#usage">Usage</a></li>
-<li class="toctree-l2"><a class="reference internal" href="readme.html#base-modules-parameters">Base modules parameters</a></li>
-<li class="toctree-l2"><a class="reference internal" href="readme.html#writing-additional-modules">Writing additional modules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="readme.html#protoplaster-test-report">Protoplaster test report</a></li>
-<li class="toctree-l2"><a class="reference internal" href="readme.html#system-report">System report</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="protoplaster.html">Protoplaster tests</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="protoplaster.html#i2c-devices-tests">I2C devices tests</a></li>
-<li class="toctree-l2"><a class="reference internal" href="protoplaster.html#camera-sensor-tests">Camera sensor tests</a></li>
-<li class="toctree-l2"><a class="reference internal" href="protoplaster.html#gpios-tests">GPIOs tests</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="report.html">Protoplaster tests report</a></li>
-<li class="toctree-l1"><a class="reference internal" href="system_report.html">Protoplaster system report</a></li>
-</ul>
+<h1 id="protoplaster-tests">Protoplaster tests<a class="headerlink" href="#protoplaster-tests" title="Link to this heading">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This page has been autogenerated from a Protoplaster tests definition file.</p>
 </div>
+<p>To perform hardware/BSP tests and open-source <a class="reference external" href="https://github.com/antmicro/protoplaster">Protoplaster</a>  framework has been used.</p>
+<p>Running Protoplaster runs the tests described in the following chapters:</p>
+<h2 id="i2c-devices-tests">I2C devices tests<a class="headerlink" href="#i2c-devices-tests" title="Link to this heading">¶</a></h2>
+<p>This module provides tests dedicated to i2c devices on specific buses:</p>
+<ul class="simple">
+<li><p>/dev/i2c-0:</p>
+<ul>
+<li><p>detection test for <em>Sensor name</em> on address: <code class="docutils literal notranslate"><span class="pre">0x3c</span></code></p></li>
+</ul>
+</li>
+<li><p>/dev/i2c-0:</p>
+<ul>
+<li><p>detection test for <em>I2C-bus multiplexer</em> on address: <code class="docutils literal notranslate"><span class="pre">0x70</span></code></p></li>
+</ul>
+</li>
+</ul>
+<h2 id="camera-sensor-tests">Camera sensor tests<a class="headerlink" href="#camera-sensor-tests" title="Link to this heading">¶</a></h2>
+<p>This module provides tests dedicated to V4L devices on specific video node:</p>
+<ul class="simple">
+<li><p>/dev/video0:</p>
+<ul>
+<li><p>try to capture frame</p></li>
+<li><p>check if the camera sensor name is <code class="docutils literal notranslate"><span class="pre">vivid</span></code></p></li>
+<li><p>check if the camera sensor driver name is <code class="docutils literal notranslate"><span class="pre">vivid</span></code></p></li>
+</ul>
+</li>
+<li><p>/dev/video2:</p>
+<ul>
+<li><p>try to capture frameand store it to <code class="docutils literal notranslate"><span class="pre">frame.raw</span></code> file</p></li>
+<li><p>check if the camera sensor name is <code class="docutils literal notranslate"><span class="pre">vivid</span></code></p></li>
+<li><p>check if the camera sensor driver name is <code class="docutils literal notranslate"><span class="pre">vivid</span></code></p></li>
+</ul>
+</li>
+</ul>
+<h2 id="gpios-tests">GPIOs tests<a class="headerlink" href="#gpios-tests" title="Link to this heading">¶</a></h2>
+<p>This module provides tests dedicated to GPIO on specific pin number</p>
+<ul class="simple">
+<li><p>/sys/class/gpio/gpio20:</p>
+<ul>
+<li><p>write <code class="docutils literal notranslate"><span class="pre">1</span></code> and read back to confirm</p></li>
+</ul>
+</li>
+</ul>
 
 
   <hr>
@@ -396,15 +467,30 @@
     
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
+        
+        <a href="readme.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Protoplaster" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Protoplaster
+            </div>
+          </div>
+        </a>
+      
       
         
-        <a href="introduction.html" class="md-footer__link md-footer__link--next" aria-label="Next: Introduction" rel="next">
+        <a href="report.html" class="md-footer__link md-footer__link--next" aria-label="Next: Protoplaster tests report" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Introduction
+              Protoplaster tests report
             </div>
           </div>
           <div class="md-footer__button md-icon">
